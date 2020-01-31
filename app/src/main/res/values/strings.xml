@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aufgabe4</string>
+    <string name="admin">Admin</string>
+    <string name="sb">Sachbearbeiter</string>
+</resources>

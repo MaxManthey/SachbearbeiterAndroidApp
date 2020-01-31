@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalFortbildungBelegenAS">
+
+    <TextView
+        android:id="@+id/normalFbBelUsernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/normalFbBelErrorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <Button
+        android:id="@+id/normalFbBelMathe1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mathe1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/normalFbBelMathe2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mathe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normalFbBelMathe1Btn" />
+
+    <Button
+        android:id="@+id/normalFbBelBwlBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BWL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normalFbBelMathe2Btn" />
+
+    <Button
+        android:id="@+id/normalFbBelKostenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kosten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normalFbBelBwlBtn" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="124dp"
+        android:layout_height="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56">
+
+        <RadioButton
+            android:id="@+id/normalFbBelegenRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belegen" />
+
+        <RadioButton
+            android:id="@+id/normalFbBestehenRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bestehen" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
